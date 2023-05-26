@@ -97,7 +97,6 @@ header {
   display: flex;
   justify-content: center;
   padding: 15px 0;
-  background-color: aquamarine;
 }
 
 header .content-wrapper {
@@ -118,14 +117,12 @@ header .content-wrapper {
 
 header nav {
   width: 60%;
-  /* background-color: blueviolet; */
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  /* background-color: yellow; */
 }
 
 
@@ -186,7 +183,7 @@ footer .copyright {
 .hero-area {
   display: flex;
   justify-content: center;
-  background-color: pink;
+  background-color: burlywood;
 }
 
 /* --------ASIDE---------- */
@@ -196,7 +193,7 @@ aside {
   display: flex;
   justify-content: center;
   color: beige;
-  background-color: #b3d4fc;
+  background-color: olive;
 }
 
 /*.form-description h3 {
@@ -262,7 +259,7 @@ aside {
 .reviews {
   display: flex;
   justify-content: center;
-  background-color: darkgreen;
+  background-color: olivedrab;
 }
 
 .reviews h2 {
@@ -422,6 +419,7 @@ aside {
 
   header {
     padding: 33px 0;
+    background-color: aqua;
   }
 
   header .content-wrapper {
@@ -509,49 +507,53 @@ aside {
 
   footer .contact {
     margin-bottom: 0;
-    padding-bottom: 40px 0;
   }
 
   footer .copyright {
     width: 100%;
   }
 
-/* ====ABOUT PAGE FOR TABLET===== */
+  /* ====ABOUT PAGE FOR TABLET===== */
 
-.mission-content {
-display: flex;
-justify-content: space-between;
-align-items:center;
-padding-top: 20px;
-}
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+  }
 
-.mission-content p {
-  width: 45%;
-}
+  .mission-content p {
+    width: 45%;
+  }
 
-.contact-section .content-wrapper h2 {
-width: 80%;
-}
+  .contact-section .content-wrapper h2 {
+    width: 80%;
+  }
 
-.contact-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 
-/* ===========FAQ PAGE FOR TABLET============== */
 
-.faq .content-wrapper {
-  justify-content: space-between;
-}
 
-.faq-content {
-  flex-basis: 45%;
-}
 
-.faq h2 {
-  width: 100%;
-}
+
+  /* ===========FAQ PAGE FOR TABLET============== */
+
+  .faq .content-wrapper {
+    justify-content: space-between;
+  }
+
+  .faq-content {
+    flex-basis: 45%;
+  }
+
+  .faq h2 {
+    width: 100%;
+  }
+
 
 }
 
@@ -561,6 +563,66 @@ width: 80%;
 
 @media only screen and (min-width: 1200px) {
   /* DESKTOP STYLES HERE */
+
+  .content-wrapper {
+    width: 960px;
+  }
+
+  /* --HEADER-- */
+
+  header {
+    padding: 15px 0;
+  }
+
+
+  /* ------HERO AREA------- */
+
+  .hero-area h1 {
+    width: 80%;
+  }
+
+  /* ASIDE */
+
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 30%;
+  }
+
+
+  /* FEATURES */
+
+  .features h2 {
+    width: 90%;
+  }
+
+  .features article {
+    flex-basis: 33%;
+  }
+
+  /* REVIEWS */
+
+  .reviews article div {
+    width: 42%;
+  }
+
+  /* =====================ABOUT PAGE==================== */
+
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+    width: 95%;
+  }
+
+
+  /* ===================FAQ PAGE===================== */
+
+  .faq h2 {
+    width: 100%;
+  }
+
 
 }
 
