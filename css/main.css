@@ -296,6 +296,13 @@ input[type=button] {
 
 
 /* =======FEATURES========*/
+
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
+}
+
+
 .features {
   display: flex;
   justify-content: center;
