@@ -98,6 +98,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   text-align: left;
   color: #e2e3ed;
+  background-color: #202322;
 }
 
 ul,
@@ -116,6 +117,7 @@ h2 {
   font-size: 1.875em;
   font-weight: 500;
   font-family: 'Poppins', sans-serif;
+  margin: 0;
 }
 
 h3,
@@ -182,7 +184,7 @@ header figure {
 header nav {
   width: 60%;
   font-size: 1.125em;
-  font-weight: 700;
+  font-weight: 900;
   text-transform: uppercase;
 }
 
@@ -232,7 +234,7 @@ footer .social-icons p {
   height: 40px;
 }
 
-footer .social-icons p {
+footer .social-icons p i {
   font-size: 1.3125em;
 }
 
@@ -328,7 +330,6 @@ input[type=button] {
 .features .features-items {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
   flex-flow: row wrap;
 }
 
@@ -599,6 +600,10 @@ input[type=button] {
     margin-bottom: 20px;
   }
 
+  .features .features-items {
+    align-items: flex-start;
+  }
+
   .features article {
     display: flex;
     align-items: center;
@@ -608,6 +613,10 @@ input[type=button] {
 
   .features .features-item-description {
     width: 62%;
+  }
+
+  .features i {
+    margin-bottom: 30px;
   }
 
   /* REVIEWS */
@@ -638,11 +647,10 @@ input[type=button] {
     margin: 100px 0;
   }
 
-  .footer-content {
+  footer .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: row;
   }
 
   footer .contact {
